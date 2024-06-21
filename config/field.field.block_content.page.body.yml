@@ -1,0 +1,32 @@
+uuid: 9edca8cf-d900-4636-8665-c70a2865bb07
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.page
+    - field.storage.block_content.body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+  module:
+    - text
+id: block_content.page.body
+field_name: body
+entity_type: block_content
+bundle: page
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text_with_summary

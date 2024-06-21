@@ -1,0 +1,31 @@
+uuid: 602886f5-3cd4-4558-a772-c20910d3566f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_news
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__related_news_related_news
+theme: olivero
+region: content_below
+weight: -9
+provider: null
+plugin: 'views_block:related_news-related_news'
+settings:
+  id: 'views_block:related_news-related_news'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping:
+    tid: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/news/*'

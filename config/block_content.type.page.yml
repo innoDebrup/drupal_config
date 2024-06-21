@@ -1,0 +1,8 @@
+uuid: 3aa7a37d-2777-47c9-b044-c3f3c9b2ae6a
+langcode: en
+status: true
+dependencies: {  }
+id: page
+label: 'Page Block'
+revision: 0
+description: 'Page block to be used for block assignment. Shows the content type reference.'

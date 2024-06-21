@@ -1,0 +1,8 @@
+uuid: 6916adc5-724d-465d-8e1e-8da11be8296f
+langcode: en
+status: true
+dependencies: {  }
+name: 'News Categories'
+vid: news_categories
+description: 'Categories for News content type for views assignment'
+weight: 0

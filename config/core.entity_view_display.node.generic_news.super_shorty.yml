@@ -1,0 +1,47 @@
+uuid: 12cdbbf0-fdd2-4097-94cd-3266cb27f899
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.super_shorty
+    - field.field.node.generic_news.body
+    - field.field.node.generic_news.comment
+    - field.field.node.generic_news.field_image
+    - field.field.node.generic_news.field_short_title
+    - field.field.node.generic_news.field_tags
+    - image.style.large
+    - node.type.generic_news
+  module:
+    - image
+    - user
+id: node.generic_news.super_shorty
+targetEntityType: node
+bundle: generic_news
+mode: super_shorty
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_short_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  comment: true
+  field_tags: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
