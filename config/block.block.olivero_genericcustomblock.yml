@@ -1,0 +1,35 @@
+uuid: fceab34a-c64f-498c-9fbb-6d92c950d4ae
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:custom_block:a232906c-a563-449d-a061-92419d8a8cb5'
+  module:
+    - block_content
+    - node
+  theme:
+    - olivero
+id: olivero_genericcustomblock
+theme: olivero
+region: content_below
+weight: -12
+provider: null
+plugin: 'block_content:a232906c-a563-449d-a061-92419d8a8cb5'
+settings:
+  id: 'block_content:a232906c-a563-449d-a061-92419d8a8cb5'
+  label: 'Generic Custom Block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      generic_news: generic_news
+      page: page
+      sample: sample

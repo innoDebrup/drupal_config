@@ -1,0 +1,33 @@
+uuid: 58924092-83c2-464a-b33f-bc2f2cb2739b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:page:233a9763-6f51-497a-9d1c-17ce4fc7d2b0'
+  module:
+    - block_content
+    - node
+  theme:
+    - olivero
+id: olivero_articlepageblock
+theme: olivero
+region: footer_top
+weight: -9
+provider: null
+plugin: 'block_content:233a9763-6f51-497a-9d1c-17ce4fc7d2b0'
+settings:
+  id: 'block_content:233a9763-6f51-497a-9d1c-17ce4fc7d2b0'
+  label: 'Article Page Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article

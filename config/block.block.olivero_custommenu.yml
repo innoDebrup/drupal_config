@@ -1,0 +1,25 @@
+uuid: 37ff7189-bbb9-421b-9875-4f9c0065c0f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.custom-menu
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_custommenu
+theme: olivero
+region: footer_bottom
+weight: -12
+provider: null
+plugin: 'system_menu_block:custom-menu'
+settings:
+  id: 'system_menu_block:custom-menu'
+  label: 'Custom Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

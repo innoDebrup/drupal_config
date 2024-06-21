@@ -1,0 +1,54 @@
+uuid: a1cb3cde-9224-43e8-a084-3238271668c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - node.type.article
+    - node.type.generic_news
+    - node.type.page
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contextual
+    - filter
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+id: content_publisher
+label: 'Content Publisher'
+weight: -7
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create generic_news content'
+  - 'create page content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete article revisions'
+  - 'delete generic_news revisions'
+  - 'delete own article content'
+  - 'delete own generic_news content'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own generic_news content'
+  - 'edit own page content'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'revert generic_news revisions'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view all revisions'
+  - 'view generic_news revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

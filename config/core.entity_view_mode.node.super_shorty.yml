@@ -1,0 +1,11 @@
+uuid: 492818a5-4ab6-40a7-90aa-e2ccc877dd2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.super_shorty
+label: 'Super Shorty'
+description: 'Short view usually used for content lists with limited space'
+targetEntityType: node
+cache: true

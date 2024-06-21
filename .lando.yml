@@ -1,0 +1,8 @@
+name: drupal
+recipe: drupal10
+config:
+  webroot: web
+  via: nginx
+  php: 8.1
+  drush: true
+  xdebug: true

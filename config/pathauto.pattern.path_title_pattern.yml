@@ -1,0 +1,26 @@
+uuid: ec509660-3306-4159-b180-fb403b4081ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: path_title_pattern
+label: 'Path Title Pattern'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  63165c93-3684-46a1-bf59-724c5a692de2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 63165c93-3684-46a1-bf59-724c5a692de2
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      generic_news: generic_news
+      news: news
+      page: page
+      sample: sample
+selection_logic: and
+weight: -5
+relationships: {  }

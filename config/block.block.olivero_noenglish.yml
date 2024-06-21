@@ -1,0 +1,36 @@
+uuid: f45328b3-5f31-4542-bdea-fe71b2b63445
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:custom_block:1b29dbb6-df93-4d02-b45b-01a5316e5d97'
+  module:
+    - block_content
+    - language
+  theme:
+    - olivero
+id: olivero_noenglish
+theme: olivero
+region: content_below
+weight: -10
+provider: null
+plugin: 'block_content:1b29dbb6-df93-4d02-b45b-01a5316e5d97'
+settings:
+  id: 'block_content:1b29dbb6-df93-4d02-b45b-01a5316e5d97'
+  label: 'No English'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      de: de
+      bn: bn
+      hi: hi
+      es: es

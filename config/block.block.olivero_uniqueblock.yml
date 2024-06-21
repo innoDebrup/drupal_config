@@ -1,0 +1,30 @@
+uuid: e855f45e-6649-4beb-8cc3-d0eda4911182
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:custom_block:5ee3053f-59f1-47bb-9164-c31f629e6bd7'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: olivero_uniqueblock
+theme: olivero
+region: content_below
+weight: -8
+provider: null
+plugin: 'block_content:5ee3053f-59f1-47bb-9164-c31f629e6bd7'
+settings:
+  id: 'block_content:5ee3053f-59f1-47bb-9164-c31f629e6bd7'
+  label: 'Unique Block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/5

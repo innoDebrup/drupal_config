@@ -1,0 +1,28 @@
+uuid: b4c4cee2-5da0-4711-8e75-364738d4fb9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.news.body
+    - field.field.node.news.field_categories
+    - field.field.node.news.field_news_image
+    - node.type.news
+  module:
+    - user
+id: node.news.search_result
+targetEntityType: node
+bundle: news
+mode: search_result
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_categories: true
+  field_news_image: true
+  langcode: true
+  search_api_excerpt: true

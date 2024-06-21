@@ -1,0 +1,15 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: অনুসন্ধান
+      pager:
+        options:
+          tags:
+            previous: '‹ পূর্ববর্তী'
+            next: 'পরবর্তী ›'
+      filters:
+        search_api_fulltext:
+          expose:
+            label: অনুসন্ধান

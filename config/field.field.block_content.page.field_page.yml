@@ -1,0 +1,23 @@
+uuid: f5b67d05-ddd7-4f44-8067-dcb814befae8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.page
+    - field.storage.block_content.field_page
+id: block_content.page.field_page
+field_name: field_page
+entity_type: block_content
+bundle: page
+label: Page
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node_type'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference
